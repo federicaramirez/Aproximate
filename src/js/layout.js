@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Context } from "./store/appContext.js";
 import injectContext from "./store/appContext.js";
 
-
+import Navbar from "./component/navbar.js";
 import Home from "./pages/home.js";
 
 function Layout() {
@@ -13,6 +13,7 @@ function Layout() {
 
   return (
     <>
+    <Navbar></Navbar>
 
       <BrowserRouter basename={store.basename} >
         <Routes>
